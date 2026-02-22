@@ -8,17 +8,17 @@ import { Share2, BarChart3, CheckCircle2, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/components/shared/language-context";
 
 const POLL_OPTIONS_ES = [
-    { id: "down", label: "Baja 📉", range: "< $1,150" },
-    { id: "stable", label: "Estable 😐", range: "$1,150 — $1,200" },
-    { id: "up_mild", label: "Sube poco 📈", range: "$1,200 — $1,300" },
-    { id: "up_strong", label: "Sube fuerte 🚀", range: "> $1,300" },
+    { id: "down", label: "Baja 📉", range: "< $1,350" },
+    { id: "stable", label: "Estable 😐", range: "$1,350 — $1,450" },
+    { id: "up_mild", label: "Sube poco 📈", range: "$1,450 — $1,550" },
+    { id: "up_strong", label: "Sube fuerte 🚀", range: "> $1,550" },
 ];
 
 const POLL_OPTIONS_EN = [
-    { id: "down", label: "Goes Down 📉", range: "< $1,150" },
-    { id: "stable", label: "Stays Flat 😐", range: "$1,150 — $1,200" },
-    { id: "up_mild", label: "Slight Rise 📈", range: "$1,200 — $1,300" },
-    { id: "up_strong", label: "Strong Rise 🚀", range: "> $1,300" },
+    { id: "down", label: "Goes Down 📉", range: "< $1,350" },
+    { id: "stable", label: "Stays Flat 😐", range: "$1,350 — $1,450" },
+    { id: "up_mild", label: "Slight Rise 📈", range: "$1,450 — $1,550" },
+    { id: "up_strong", label: "Strong Rise 🚀", range: "> $1,550" },
 ];
 
 // Simulated community results (would be server-side in production)
@@ -99,10 +99,10 @@ export function WeeklyPoll() {
                                 onClick={() => handleVote(option.id)}
                                 disabled={!!voted}
                                 className={`w-full relative overflow-hidden rounded-xl border transition-all duration-300 ${isSelected
-                                        ? "border-indigo-500/50 bg-indigo-500/10"
-                                        : voted
-                                            ? "border-border/30 bg-muted/20 opacity-70"
-                                            : "border-border/50 bg-card/80 hover:border-indigo-500/30 hover:bg-indigo-500/5 cursor-pointer"
+                                    ? "border-indigo-500/50 bg-indigo-500/10"
+                                    : voted
+                                        ? "border-border/30 bg-muted/20 opacity-70"
+                                        : "border-border/50 bg-card/80 hover:border-indigo-500/30 hover:bg-indigo-500/5 cursor-pointer"
                                     }`}
                             >
                                 {/* Result bar background */}
