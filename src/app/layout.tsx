@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/logo.webp",
+    icon: "/favicon.webp",
+    apple: "/favicon.webp",
   },
 };
 
