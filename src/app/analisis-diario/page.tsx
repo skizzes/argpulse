@@ -1,9 +1,10 @@
+import fs from "fs";
+import path from "path";
 import { Navbar } from "@/components/shared/navbar";
 import { Footer } from "@/components/shared/footer";
 import { HistoryContent } from "./content";
 import { generateTodaysAnalysis } from "@/lib/daily-analysis";
 import type { DailyAnalysisPost } from "@/lib/daily-analysis";
-import historyData from "../../../data/analysis-history.json";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,16 +13,31 @@ export const metadata: Metadata = {
     alternates: { canonical: "https://argpulse.com/analisis-diario" },
 };
 
-export default async function AnalisisDiarioPage() {
-    // Generate today's live analysis
-    const todayPost = await generateTodaysAnalysis();
+export const revalidate = 600;
 
-    // Merge: today's live data + historical records (avoid duplicates by id)
-    const historyPosts = historyData as DailyAnalysisPost[];
-    const allPosts: DailyAnalysisPost[] = [
-        todayPost,
-        ...historyPosts.filter((p) => p.id !== todayPost.id),
-    ];
+export default async function AnalisisDiarioPage() {
+    // Read historical data via fs (reliable in production — avoids static import issues)
+    let historyPosts: DailyAnalysisPost[] = [];
+    try {
+        const filePath = path.join(process.cwd(), "data", "analysis-history.json");
+        const raw = fs.readFileSync(filePath, "utf-8");
+        historyPosts = JSON.parse(raw) as DailyAnalysisPost[];
+    } catch {
+        historyPosts = [];
+    }
+
+    // Generate today's live analysis (with fallback if API is down)
+    let todayPost: DailyAnalysisPost | null = null;
+    try {
+        todayPost = await generateTodaysAnalysis();
+    } catch {
+        todayPost = null;
+    }
+
+    // Merge: today's live data + historical (avoid duplicates by id)
+    const allPosts: DailyAnalysisPost[] = todayPost
+        ? [todayPost, ...historyPosts.filter((p) => p.id !== todayPost!.id)]
+        : historyPosts;
 
     // Sort newest first
     allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
