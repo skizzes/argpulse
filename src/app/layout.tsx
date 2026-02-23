@@ -71,6 +71,21 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        {/* Google Analytics 4 — Replace G-XXXXXXXXXX with your Measurement ID */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-61L7RKXLXY"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-61L7RKXLXY', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         {/* Structured Data for SEO */}
         <script
           type="application/ld+json"

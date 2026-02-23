@@ -11,11 +11,13 @@ export function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const navLinks = [
-        { href: "#indicators", label: t.nav.economic },
-        { href: "#inflation", label: t.nav.inflation },
-        { href: "#strategic", label: t.nav.strategic },
-        { href: "#markets", label: t.nav.markets },
+        { href: "/#indicators", label: t.nav.economic },
+        { href: "/#inflation", label: t.nav.inflation },
+        { href: "/#strategic", label: t.nav.strategic },
+        { href: "/#markets", label: t.nav.markets },
+        { href: "/analisis-diario", label: t.nav.daily, highlight: true },
     ];
+
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -36,8 +38,15 @@ export function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                                className={`flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors ${link.highlight ? "text-primary" : ""
+                                    }`}
                             >
+                                {link.highlight && (
+                                    <span className="relative flex h-1.5 w-1.5">
+                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary" />
+                                    </span>
+                                )}
                                 {link.label}
                             </Link>
                         ))}
@@ -110,8 +119,15 @@ export function Navbar() {
                                 key={link.href}
                                 href={link.href}
                                 onClick={() => setMobileOpen(false)}
-                                className="text-sm font-bold uppercase tracking-widest py-3 px-4 rounded-lg hover:bg-muted/50 transition-colors"
+                                className={`flex items-center gap-2 text-sm font-bold uppercase tracking-widest py-3 px-4 rounded-lg hover:bg-muted/50 transition-colors ${link.highlight ? "text-primary" : ""
+                                    }`}
                             >
+                                {link.highlight && (
+                                    <span className="relative flex h-1.5 w-1.5">
+                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary" />
+                                    </span>
+                                )}
                                 {link.label}
                             </Link>
                         ))}

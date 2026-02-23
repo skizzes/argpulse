@@ -7,6 +7,7 @@ export const translations = {
             inflation: "Inflación",
             strategic: "Estratégico",
             markets: "Mercado de Capitales",
+            daily: "Análisis Diario",
             liveUpdates: "Actualizaciones en Vivo",
         },
         hero: {
@@ -137,6 +138,7 @@ export const translations = {
             inflation: "Inflation",
             strategic: "Strategic",
             markets: "Capital Markets",
+            daily: "Daily Analysis",
             liveUpdates: "Live Updates",
         },
         hero: {

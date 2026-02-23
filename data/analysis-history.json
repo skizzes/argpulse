@@ -1,0 +1,737 @@
+[
+    {
+        "id": "2026-02-23",
+        "date": "2026-02-23T09:00:00.000Z",
+        "dateFormatted": "Lunes 23 de Febrero, 2026",
+        "titleEs": "Análisis del Lunes 23 de Febrero, 2026: Panorama Económico Mixto",
+        "titleEn": "Analysis — Monday, February 23, 2026: Mixed Economic Outlook",
+        "summaryEs": "El panorama económico argentino muestra un tono **mixto** en la jornada de hoy. El dólar blue opera en $1.440, con una brecha cambiaria del 18% respecto al oficial. El riesgo país se ubica en 680 puntos básicos.",
+        "summaryEn": "Argentina's economic landscape shows a **mixed** tone today. The blue dollar trades at $1,440, with an 18% spread over the official rate. Country risk stands at 680 bps.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "BCRA"
+        ],
+        "sentiment": "mixed",
+        "riskLevel": "medium",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.440",
+                "trend": "neutral",
+                "noteEs": "Brecha: 18%",
+                "noteEn": "Spread: 18%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.220",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "680 bps",
+                "trend": "up",
+                "noteEs": "Nivel favorable",
+                "noteEn": "Favorable level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "+1.2%",
+                "trend": "up",
+                "noteEs": "1.850.000 pts",
+                "noteEn": "1,850,000 pts"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 28.4B",
+                "trend": "neutral",
+                "noteEs": "Controlado",
+                "noteEn": "Controlled"
+            },
+            {
+                "labelEs": "Inflación Mensual",
+                "labelEn": "Monthly CPI",
+                "value": "2.4%",
+                "trend": "up",
+                "noteEs": "Desaceleración",
+                "noteEn": "Decelerating"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "Dólar blue en $1.440 con brecha del 18% frente al oficial",
+            "Riesgo país en 680 bps — nivel favorable para acceso al crédito",
+            "MERVAL sube +1.2% en la jornada",
+            "Inflación mensual de 2.4% — tendencia desinflacionaria en curso",
+            "Reservas brutas del BCRA en USD 28.4 mil millones"
+        ],
+        "keyPointsEn": [
+            "Blue dollar at $1,440 with an 18% spread over the official rate",
+            "Country risk at 680 bps — favorable level for credit access",
+            "MERVAL gains +1.2% on the day",
+            "Monthly inflation at 2.4% — disinflationary trend in progress",
+            "BCRA gross reserves at USD 28.4B"
+        ]
+    },
+    {
+        "id": "2026-02-22",
+        "date": "2026-02-22T09:00:00.000Z",
+        "dateFormatted": "Domingo 22 de Febrero, 2026",
+        "titleEs": "Análisis del Domingo 22 de Febrero, 2026: Cierre Semanal Positivo",
+        "titleEn": "Analysis — Sunday, February 22, 2026: Positive Weekly Close",
+        "summaryEs": "La semana cierra con un tono **optimista**, impulsada por la baja del riesgo país y el avance del MERVAL. El dólar blue sostiene la estabilidad relativa.",
+        "summaryEn": "The week closes on an **optimistic** note, driven by declining country risk and MERVAL gains. The blue dollar maintains relative stability.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "BCRA",
+            "MERVAL ↑"
+        ],
+        "sentiment": "bullish",
+        "riskLevel": "low",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.435",
+                "trend": "neutral",
+                "noteEs": "Brecha: 17.6%",
+                "noteEn": "Spread: 17.6%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.220",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "672 bps",
+                "trend": "up",
+                "noteEs": "Nivel favorable",
+                "noteEn": "Favorable level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "+2.1%",
+                "trend": "up",
+                "noteEs": "1.830.000 pts",
+                "noteEn": "1,830,000 pts"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 28.1B",
+                "trend": "neutral",
+                "noteEs": "Controlado",
+                "noteEn": "Controlled"
+            },
+            {
+                "labelEs": "Inflación Mensual",
+                "labelEn": "Monthly CPI",
+                "value": "2.4%",
+                "trend": "up",
+                "noteEs": "Desaceleración",
+                "noteEn": "Decelerating"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "Dólar blue en $1.435 con brecha del 17.6%, mínimos de los últimos 3 meses",
+            "Riesgo país perforó los 680 bps, acercándose a mínimos post-restructuración",
+            "MERVAL avanza +2.1% impulsado por papeles bancarios y energéticos",
+            "Inflación de 2.4% consolida la tendencia desinflacionaria",
+            "El BCRA acumuló compras netas en la semana"
+        ],
+        "keyPointsEn": [
+            "Blue dollar at $1,435 with a 17.6% spread — 3-month lows",
+            "Country risk broke below 680 bps, approaching post-restructuring lows",
+            "MERVAL gains +2.1% driven by banking and energy stocks",
+            "2.4% inflation consolidates the disinflationary trend",
+            "BCRA accumulated net purchases during the week"
+        ]
+    },
+    {
+        "id": "2026-02-21",
+        "date": "2026-02-21T09:00:00.000Z",
+        "dateFormatted": "Sábado 21 de Febrero, 2026",
+        "titleEs": "Análisis del Sábado 21 de Febrero, 2026: Mercados en Pausa",
+        "titleEn": "Analysis — Saturday, February 21, 2026: Markets on Pause",
+        "summaryEs": "Jornada sin operaciones en renta variable. El dólar blue y los tipos alternativos operan con **tono neutro** con volúmenes reducidos propios del fin de semana.",
+        "summaryEn": "No equity trading session. The blue dollar and alternative rates trade with a **neutral** tone on reduced weekend volumes.",
+        "tags": [
+            "Economía",
+            "Dólar",
+            "BCRA"
+        ],
+        "sentiment": "neutral",
+        "riskLevel": "low",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.430",
+                "trend": "neutral",
+                "noteEs": "Brecha: 17.2%",
+                "noteEn": "Spread: 17.2%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.220",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "685 bps",
+                "trend": "up",
+                "noteEs": "Nivel favorable",
+                "noteEn": "Favorable level"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 27.9B",
+                "trend": "neutral",
+                "noteEs": "Controlado",
+                "noteEn": "Controlled"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "Sin operaciones bursátiles por día no hábil",
+            "Dólar blue estable en $1.430 con mínima actividad de fin de semana",
+            "Riesgo país sin movimientos relevantes en 685 bps",
+            "Foco del mercado puesto en la reunión de gabinete del lunes"
+        ],
+        "keyPointsEn": [
+            "No stock market operations on non-business day",
+            "Blue dollar stable at $1,430 with minimal weekend activity",
+            "Country risk unchanged at 685 bps",
+            "Market focus on Monday's cabinet meeting"
+        ]
+    },
+    {
+        "id": "2026-02-20",
+        "date": "2026-02-20T09:00:00.000Z",
+        "dateFormatted": "Viernes 20 de Febrero, 2026",
+        "titleEs": "Análisis del Viernes 20 de Febrero, 2026: Toma de Ganancias en Renta Variable",
+        "titleEn": "Analysis — Friday, February 20, 2026: Profit-Taking in Equities",
+        "summaryEs": "La rueda del viernes presenta un sesgo **bajista** en renta variable por toma de ganancias tras las subas de la semana. El dólar blue se mantiene sin cambios significativos.",
+        "summaryEn": "Friday's session shows a **bearish** tone in equities due to profit-taking after the week's gains. The blue dollar remains broadly unchanged.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "MERVAL ↓"
+        ],
+        "sentiment": "mixed",
+        "riskLevel": "medium",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.432",
+                "trend": "neutral",
+                "noteEs": "Brecha: 17.4%",
+                "noteEn": "Spread: 17.4%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.219",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "695 bps",
+                "trend": "up",
+                "noteEs": "Nivel favorable",
+                "noteEn": "Favorable level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "-0.8%",
+                "trend": "down",
+                "noteEs": "Toma de ganancias",
+                "noteEn": "Profit-taking"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 27.7B",
+                "trend": "neutral",
+                "noteEs": "Controlado",
+                "noteEn": "Controlled"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "MERVAL retrocede -0.8% por toma de ganancias al cierre de semana",
+            "Dólar blue estable en $1.432 sin presiones cambiarias",
+            "Riesgo país se mantiene por debajo de 700 bps",
+            "El BCRA intervino en el mercado de deuda para sostener precios"
+        ],
+        "keyPointsEn": [
+            "MERVAL falls -0.8% on profit-taking at week close",
+            "Blue dollar stable at $1,432 without FX pressures",
+            "Country risk stays below 700 bps",
+            "BCRA intervened in the debt market to support prices"
+        ]
+    },
+    {
+        "id": "2026-02-19",
+        "date": "2026-02-19T09:00:00.000Z",
+        "dateFormatted": "Jueves 19 de Febrero, 2026",
+        "titleEs": "Análisis del Jueves 19 de Febrero, 2026: Semana de Datos Positiva",
+        "titleEn": "Analysis — Thursday, February 19, 2026: Positive Data Week",
+        "summaryEs": "El dato de inflación de enero confirmó la desaceleración a **2.4%**, debajo de las estimaciones del mercado. Los activos financieros reaccionaron positivamente.",
+        "summaryEn": "January's inflation figure confirmed deceleration to **2.4%**, below market estimates. Financial assets reacted positively.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "MERVAL ↑",
+            "Desinflación"
+        ],
+        "sentiment": "bullish",
+        "riskLevel": "low",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.428",
+                "trend": "up",
+                "noteEs": "Brecha: 17.1%",
+                "noteEn": "Spread: 17.1%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.219",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "698 bps",
+                "trend": "up",
+                "noteEs": "Nivel favorable",
+                "noteEn": "Favorable level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "+3.4%",
+                "trend": "up",
+                "noteEs": "Mejor rueda del mes",
+                "noteEn": "Best session of the month"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 27.5B",
+                "trend": "up",
+                "noteEs": "Controlado",
+                "noteEn": "Controlled"
+            },
+            {
+                "labelEs": "Inflación Mensual",
+                "labelEn": "Monthly CPI",
+                "value": "2.4%",
+                "trend": "up",
+                "noteEs": "Dato oficial enero",
+                "noteEn": "January official data"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "Inflación de enero en 2.4% — mejor dato desde 2021, debajo de expectativas",
+            "MERVAL sube +3.4%, mejor rueda del mes ante la sorpresa inflacionaria",
+            "Riesgo país inicia convergencia hacia los 650 bps",
+            "El mercado descuenta mayor probabilidad de salida del cepo en Q2",
+            "El BCRA compró divisas por tercer día consecutivo"
+        ],
+        "keyPointsEn": [
+            "January inflation at 2.4% — best reading since 2021, below expectations",
+            "MERVAL gains +3.4%, best session of the month on inflation surprise",
+            "Country risk begins convergence toward 650 bps",
+            "Market prices higher probability of capital controls exit in Q2",
+            "BCRA bought FX for the third consecutive day"
+        ]
+    },
+    {
+        "id": "2026-02-18",
+        "date": "2026-02-18T09:00:00.000Z",
+        "dateFormatted": "Miércoles 18 de Febrero, 2026",
+        "titleEs": "Análisis del Miércoles 18 de Febrero, 2026: Espera del Dato de Inflación",
+        "titleEn": "Analysis — Wednesday, February 18, 2026: Awaiting Inflation Data",
+        "summaryEs": "El mercado opera en modo espera previa al dato de inflación de enero. El dólar blue se mantiene **neutro** mientras los operadores ajustan posiciones.",
+        "summaryEn": "The market operates in wait-and-see mode ahead of January's inflation data. The blue dollar holds **neutral** as traders adjust positions.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "BCRA"
+        ],
+        "sentiment": "neutral",
+        "riskLevel": "medium",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.445",
+                "trend": "neutral",
+                "noteEs": "Brecha: 18.4%",
+                "noteEn": "Spread: 18.4%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.220",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "720 bps",
+                "trend": "neutral",
+                "noteEs": "Nivel moderado",
+                "noteEn": "Moderate level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "+0.2%",
+                "trend": "up",
+                "noteEs": "Volumen reducido",
+                "noteEn": "Reduced volume"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 27.2B",
+                "trend": "neutral",
+                "noteEs": "Controlado",
+                "noteEn": "Controlled"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "Mercado en compás de espera por el IPC de enero del INDEC",
+            "Consenso de mercado estimaba inflación de 2.8% para enero",
+            "Dólar blue relativamente quieto en $1.445",
+            "El BCRA vendió divisas por primera vez en la semana para contener el tipo informal",
+            "Las consultoras privadas anticiparon números de 2.4%-2.6% para enero"
+        ],
+        "keyPointsEn": [
+            "Market in wait-and-see mode ahead of INDEC's January CPI",
+            "Market consensus estimated January inflation at 2.8%",
+            "Blue dollar relatively quiet at $1,445",
+            "BCRA sold FX for the first time this week to contain the informal rate",
+            "Private consultancies anticipated 2.4%-2.6% figures for January"
+        ]
+    },
+    {
+        "id": "2026-02-17",
+        "date": "2026-02-17T09:00:00.000Z",
+        "dateFormatted": "Martes 17 de Febrero, 2026",
+        "titleEs": "Análisis del Martes 17 de Febrero, 2026: Presión sobre el Dólar Blue",
+        "titleEn": "Analysis — Tuesday, February 17, 2026: Pressure on Blue Dollar",
+        "summaryEs": "El dólar blue mostró una suba de $15 durante la jornada reflejando **demanda estacional** de divisas. El riesgo país subió levemente ante el movimiento cambiario.",
+        "summaryEn": "The blue dollar rose $15 during the session, reflecting **seasonal demand** for foreign currency. Country risk edged up slightly on the currency movement.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "BCRA"
+        ],
+        "sentiment": "bearish",
+        "riskLevel": "medium",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.455",
+                "trend": "down",
+                "noteEs": "Brecha: 19.3%",
+                "noteEn": "Spread: 19.3%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.220",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "745 bps",
+                "trend": "down",
+                "noteEs": "Nivel moderado",
+                "noteEn": "Moderate level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "-1.3%",
+                "trend": "down",
+                "noteEs": "Contagio cambiario",
+                "noteEn": "FX contagion"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 27.0B",
+                "trend": "down",
+                "noteEs": "Vendió el BCRA",
+                "noteEn": "BCRA sold"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "Dólar blue sube $15 hasta $1.455, brecha se amplía al 19.3%",
+            "MERVAL cae -1.3% por contagio del movimiento cambiario",
+            "Riesgo país sube a 745 bps, primer movimiento al alza en dos semanas",
+            "El BCRA vendió divisas por segundo día consecutivo",
+            "Demanda estacional de dólares por turismo y atesoramiento"
+        ],
+        "keyPointsEn": [
+            "Blue dollar rises $15 to $1,455, spread widens to 19.3%",
+            "MERVAL falls -1.3% on FX movement contagion",
+            "Country risk rises to 745 bps, first upside move in two weeks",
+            "BCRA sold FX for the second consecutive day",
+            "Seasonal dollar demand from tourism and hoarding"
+        ]
+    },
+    {
+        "id": "2026-02-16",
+        "date": "2026-02-16T09:00:00.000Z",
+        "dateFormatted": "Lunes 16 de Febrero, 2026",
+        "titleEs": "Análisis del Lunes 16 de Febrero, 2026: Apertura de Semana Positiva",
+        "titleEn": "Analysis — Monday, February 16, 2026: Positive Weekly Open",
+        "summaryEs": "La semana arranca con tono **optimista** después de declaraciones del Ministerio de Economía sobre el avance de las negociaciones con el FMI.",
+        "summaryEn": "The week opens on an **optimistic** note following Economy Ministry statements on progress in IMF negotiations.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "BCRA",
+            "MERVAL ↑"
+        ],
+        "sentiment": "bullish",
+        "riskLevel": "low",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.438",
+                "trend": "up",
+                "noteEs": "Brecha: 17.9%",
+                "noteEn": "Spread: 17.9%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.219",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "710 bps",
+                "trend": "up",
+                "noteEs": "Nivel favorable",
+                "noteEn": "Favorable level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "+2.8%",
+                "trend": "up",
+                "noteEs": "Impulso FMI",
+                "noteEn": "IMF boost"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 27.3B",
+                "trend": "up",
+                "noteEs": "Controlado",
+                "noteEn": "Controlled"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "Declaraciones del Ministerio de Economía sobre el FMI generan optimismo en el mercado",
+            "MERVAL sube +2.8% liderado por Bancos y Energéticas",
+            "Riesgo país baja a 710 bps, nivel mínimo de las últimas 4 semanas",
+            "El dólar blue retrocede levemente a $1.438",
+            "El BCRA acumula compras netas por cuarta jornada consecutiva"
+        ],
+        "keyPointsEn": [
+            "Economy Ministry statements on IMF generate market optimism",
+            "MERVAL gains +2.8% led by Banking and Energy stocks",
+            "Country risk falls to 710 bps, 4-week low",
+            "Blue dollar slightly down at $1,438",
+            "BCRA accumulates net purchases for the fourth consecutive session"
+        ]
+    },
+    {
+        "id": "2026-02-13",
+        "date": "2026-02-13T09:00:00.000Z",
+        "dateFormatted": "Viernes 13 de Febrero, 2026",
+        "titleEs": "Análisis del Viernes 13 de Febrero, 2026: Cierre Semanal Mixto",
+        "titleEn": "Analysis — Friday, February 13, 2026: Mixed Weekly Close",
+        "summaryEs": "La semana cierra con un panorama **mixto**: avances en el frente cambiario pero sin catalizadores claros para sostener el rally en renta variable.",
+        "summaryEn": "The week closes with a **mixed** picture: advances on the FX front but no clear catalysts to sustain the equity rally.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "BCRA"
+        ],
+        "sentiment": "mixed",
+        "riskLevel": "medium",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.450",
+                "trend": "neutral",
+                "noteEs": "Brecha: 18.9%",
+                "noteEn": "Spread: 18.9%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.219",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "738 bps",
+                "trend": "neutral",
+                "noteEs": "Nivel moderado",
+                "noteEn": "Moderate level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "-0.4%",
+                "trend": "down",
+                "noteEs": "Cierre sin dirección",
+                "noteEn": "Directionless close"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 27.1B",
+                "trend": "neutral",
+                "noteEs": "Controlado",
+                "noteEn": "Controlled"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "Semana con balance positivo en el frente cambiario y de reservas",
+            "MERVAL cierra con leve baja de -0.4% sin catalizadores",
+            "Riesgo país sin cambios relevantes en torno a 738 bps",
+            "El BCRA acumuló compras netas de USD 180M en la semana",
+            "El mercado aguarda el dato de inflación de enero como próximo catalizador"
+        ],
+        "keyPointsEn": [
+            "Week with positive balance on FX and reserves front",
+            "MERVAL closes with slight -0.4% decline without catalysts",
+            "Country risk unchanged around 738 bps",
+            "BCRA accumulated net purchases of USD 180M during the week",
+            "Market awaits January inflation data as the next catalyst"
+        ]
+    },
+    {
+        "id": "2026-02-12",
+        "date": "2026-02-12T09:00:00.000Z",
+        "dateFormatted": "Jueves 12 de Febrero, 2026",
+        "titleEs": "Análisis del Jueves 12 de Febrero, 2026: Reservas en Foco",
+        "titleEn": "Analysis — Thursday, February 12, 2026: Reserves in Focus",
+        "summaryEs": "Las reservas del BCRA vuelven a estar en el centro de la discusión luego de reportarse acumulación neta. El mercado reacciona con tono **optimista**.",
+        "summaryEn": "BCRA reserves are back at the center of discussion after net accumulation was reported. The market reacts with an **optimistic** tone.",
+        "tags": [
+            "Economía",
+            "Mercados",
+            "Dólar",
+            "BCRA",
+            "MERVAL ↑"
+        ],
+        "sentiment": "bullish",
+        "riskLevel": "low",
+        "highlights": [
+            {
+                "labelEs": "Dólar Blue",
+                "labelEn": "Blue Dollar",
+                "value": "$1.442",
+                "trend": "up",
+                "noteEs": "Brecha: 18.2%",
+                "noteEn": "Spread: 18.2%"
+            },
+            {
+                "labelEs": "Tipo Oficial",
+                "labelEn": "Official Rate",
+                "value": "$1.220",
+                "trend": "neutral"
+            },
+            {
+                "labelEs": "Riesgo País",
+                "labelEn": "Country Risk",
+                "value": "730 bps",
+                "trend": "up",
+                "noteEs": "Nivel favorable",
+                "noteEn": "Favorable level"
+            },
+            {
+                "labelEs": "MERVAL",
+                "labelEn": "MERVAL",
+                "value": "+1.7%",
+                "trend": "up",
+                "noteEs": "Foco en BCRA",
+                "noteEn": "BCRA focus"
+            },
+            {
+                "labelEs": "Reservas BCRA",
+                "labelEn": "BCRA Reserves",
+                "value": "USD 27.4B",
+                "trend": "up",
+                "noteEs": "Acumulación neta",
+                "noteEn": "Net accumulation"
+            }
+        ],
+        "sections": [],
+        "keyPointsEs": [
+            "El BCRA acumula USD 85M en compras netas durante el día",
+            "Reservas brutas suben por tercer día consecutivo",
+            "MERVAL gana +1.7% liderado por el sector financiero",
+            "Riesgo país consolida por debajo de 750 bps",
+            "El dólar blue se mantiene estable en $1.442"
+        ],
+        "keyPointsEn": [
+            "BCRA accumulates USD 85M in net purchases during the day",
+            "Gross reserves rise for the third consecutive day",
+            "MERVAL gains +1.7% led by the financial sector",
+            "Country risk holds below 750 bps",
+            "Blue dollar stable at $1,442"
+        ]
+    }
+]

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Share2, BarChart3, CheckCircle2, ChevronRight } from "lucide-react";
+import { Share2, BarChart3, CheckCircle2, ChevronRight, Loader2 } from "lucide-react";
 import { useLanguage } from "@/components/shared/language-context";
 
 const POLL_OPTIONS_ES = [
@@ -21,39 +21,81 @@ const POLL_OPTIONS_EN = [
     { id: "up_strong", label: "Strong Rise 🚀", range: "> $1,550" },
 ];
 
-// Simulated community results (would be server-side in production)
-const MOCK_RESULTS: Record<string, number> = {
-    down: 12,
-    stable: 38,
-    up_mild: 35,
-    up_strong: 15,
-};
-
 export function WeeklyPoll() {
-    const { t, locale } = useLanguage();
+    const { locale } = useLanguage();
     const [voted, setVoted] = useState<string | null>(null);
-    const [results, setResults] = useState(MOCK_RESULTS);
+    const [results, setResults] = useState<Record<string, number>>({
+        down: 12,
+        stable: 38,
+        up_mild: 35,
+        up_strong: 15,
+    });
+    const [total, setTotal] = useState(100);
     const [animate, setAnimate] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const [voting, setVoting] = useState(false);
 
     const options = locale === "es" ? POLL_OPTIONS_ES : POLL_OPTIONS_EN;
 
+    // Load vote counts from server on mount
     useEffect(() => {
-        const saved = localStorage.getItem("argpulse_weekly_poll_vote");
-        if (saved) {
-            setVoted(saved);
-            // Increment the saved vote in results
-            setResults((prev) => ({ ...prev, [saved]: (prev[saved] || 0) + 1 }));
-        }
+        const savedVote = localStorage.getItem("argpulse_weekly_poll_vote");
+
+        fetch("/api/poll")
+            .then((r) => r.json())
+            .then((data) => {
+                if (data.counts) {
+                    setResults(data.counts);
+                    setTotal(data.total);
+                }
+            })
+            .catch(() => {/* keep defaults */ })
+            .finally(() => {
+                setLoading(false);
+                if (savedVote) {
+                    setVoted(savedVote);
+                    setTimeout(() => setAnimate(true), 150);
+                }
+            });
     }, []);
 
-    const totalVotes = Object.values(results).reduce((a, b) => a + b, 0);
+    const handleVote = async (optionId: string) => {
+        if (voted || voting) return;
 
-    const handleVote = (optionId: string) => {
-        if (voted) return;
-        localStorage.setItem("argpulse_weekly_poll_vote", optionId);
-        setVoted(optionId);
-        setResults((prev) => ({ ...prev, [optionId]: (prev[optionId] || 0) + 1 }));
-        setTimeout(() => setAnimate(true), 100);
+        // Check if already voted (localStorage)
+        const savedVote = localStorage.getItem("argpulse_weekly_poll_vote");
+        if (savedVote) {
+            setVoted(savedVote);
+            setTimeout(() => setAnimate(true), 150);
+            return;
+        }
+
+        setVoting(true);
+        try {
+            const res = await fetch("/api/poll", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ optionId }),
+            });
+            const data = await res.json();
+
+            if (data.counts) {
+                setResults(data.counts);
+                setTotal(data.total);
+            }
+            localStorage.setItem("argpulse_weekly_poll_vote", optionId);
+            setVoted(optionId);
+            setTimeout(() => setAnimate(true), 100);
+        } catch {
+            // Fallback: update locally
+            setResults((prev) => ({ ...prev, [optionId]: (prev[optionId] || 0) + 1 }));
+            setTotal((t) => t + 1);
+            localStorage.setItem("argpulse_weekly_poll_vote", optionId);
+            setVoted(optionId);
+            setTimeout(() => setAnimate(true), 100);
+        } finally {
+            setVoting(false);
+        }
     };
 
     const shareToX = () => {
@@ -90,19 +132,20 @@ export function WeeklyPoll() {
                 {/* Options */}
                 <div className="space-y-2">
                     {options.map((option) => {
-                        const pct = totalVotes > 0 ? Math.round((results[option.id] / totalVotes) * 100) : 0;
+                        const count = results[option.id] || 0;
+                        const pct = total > 0 ? Math.round((count / total) * 100) : 0;
                         const isSelected = voted === option.id;
 
                         return (
                             <button
                                 key={option.id}
                                 onClick={() => handleVote(option.id)}
-                                disabled={!!voted}
+                                disabled={!!voted || voting || loading}
                                 className={`w-full relative overflow-hidden rounded-xl border transition-all duration-300 ${isSelected
-                                    ? "border-indigo-500/50 bg-indigo-500/10"
-                                    : voted
-                                        ? "border-border/30 bg-muted/20 opacity-70"
-                                        : "border-border/50 bg-card/80 hover:border-indigo-500/30 hover:bg-indigo-500/5 cursor-pointer"
+                                        ? "border-indigo-500/50 bg-indigo-500/10"
+                                        : voted
+                                            ? "border-border/30 bg-muted/20 opacity-70"
+                                            : "border-border/50 bg-card/80 hover:border-indigo-500/30 hover:bg-indigo-500/5 cursor-pointer"
                                     }`}
                             >
                                 {/* Result bar background */}
@@ -122,7 +165,9 @@ export function WeeklyPoll() {
                                         <span className="text-sm font-bold">{option.label}</span>
                                         <span className="text-xs text-muted-foreground">{option.range}</span>
                                     </div>
-                                    {voted ? (
+                                    {voting && !voted ? (
+                                        <Loader2 className="h-4 w-4 text-muted-foreground animate-spin" />
+                                    ) : voted ? (
                                         <span className={`text-sm font-black ${isSelected ? "text-indigo-400" : "text-muted-foreground"}`}>
                                             {pct}%
                                         </span>
@@ -139,7 +184,7 @@ export function WeeklyPoll() {
                 {voted ? (
                     <div className="flex items-center justify-between pt-2">
                         <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">
-                            {totalVotes.toLocaleString()} {locale === "es" ? "votos" : "votes"}
+                            {total.toLocaleString()} {locale === "es" ? "votos" : "votes"}
                         </span>
                         <Button
                             size="sm"
@@ -152,7 +197,9 @@ export function WeeklyPoll() {
                     </div>
                 ) : (
                     <p className="text-[10px] text-muted-foreground text-center">
-                        {locale === "es" ? "Anónimo · 1 voto por usuario" : "Anonymous · 1 vote per user"}
+                        {loading
+                            ? (locale === "es" ? "Cargando votos..." : "Loading votes...")
+                            : (locale === "es" ? "Anónimo · 1 voto por usuario" : "Anonymous · 1 vote per user")}
                     </p>
                 )}
             </CardContent>

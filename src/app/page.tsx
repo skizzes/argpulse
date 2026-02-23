@@ -16,15 +16,17 @@ import {
   PresidentialComparisonChart,
   InflationSummaryCards
 } from "@/components/indicators/inflation-charts";
+import { DailyAnalysis } from "@/components/blog/daily-analysis";
 
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, TrendingDown } from "lucide-react";
 import { getExchangeRates, getCountryRisk, getLatestNews, getReserves, getInflationSeries, getCurrencyHistory, getMarketIndices } from "@/lib/api";
 import { calculatePulseScore } from "@/lib/pulse-engine";
+import { generateTodaysAnalysis } from "@/lib/daily-analysis";
 
 export default async function Home() {
   // Fetch real data on the server side
-  const [rates, risk, news, reserves, inflationData, pulse, markets, historyOficial, historyBlue, historyMep] = await Promise.all([
+  const [rates, risk, news, reserves, inflationData, pulse, markets, historyOficial, historyBlue, historyMep, dailyPost] = await Promise.all([
     getExchangeRates(),
     getCountryRisk(),
     getLatestNews(),
@@ -34,7 +36,8 @@ export default async function Home() {
     getMarketIndices(),
     getCurrencyHistory('oficial'),
     getCurrencyHistory('blue'),
-    getCurrencyHistory('bolsa')
+    getCurrencyHistory('bolsa'),
+    generateTodaysAnalysis(),
   ]);
 
   // Create a merged payload of indicators
@@ -114,6 +117,9 @@ export default async function Home() {
         <section id="timeline" className="w-full">
           <GrowthTimeline />
         </section>
+
+        {/* Daily Analysis Blog */}
+        {dailyPost && <DailyAnalysis post={dailyPost} />}
 
         {/* Multi-Column Dashboard Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 w-full">
