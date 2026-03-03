@@ -83,7 +83,7 @@ Ejecutar **como Administrador**:
 ```
 setup_scheduler.bat
 ```
-Esto crea una tarea en el Programador de Tareas de Windows que ejecuta el bot **todos los días a las 15:00 (hora argentina)**.
+Esto crea una tarea en el Programador de Tareas de Windows que ejecuta el bot **todos los días a las 11:00 (hora argentina)**.
 
 ### Verificar la tarea creada
 Abrí el **Programador de tareas** de Windows y buscá `ArgPulseTwitterBot`.
@@ -140,6 +140,6 @@ Para migrar a un VPS o servicio cloud:
 2. Configurar las variables de entorno en el servidor
 3. Usar **cron** en Linux:
    ```bash
-   0 18 * * * cd /ruta/argpulse-bot && python main.py
+   0 14 * * * cd /ruta/argpulse-bot && python main.py
    ```
-   (18:00 UTC = 15:00 Argentina)
+   (14:00 UTC = 11:00 Argentina)
