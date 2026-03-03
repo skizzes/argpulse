@@ -39,8 +39,9 @@ Reglas para el hilo de Twitter/X:
 3. El primer tweet debe ser un título atractivo con emojis.
 4. Tono: profesional, analítico y claro.
 5. Numeración: cada tweet debe iniciar con "N/TOTAL" (ej: "1/7").
-6. El último tweet debe tener un llamado a la acción.
-7. Responde ÚNICAMENTE con JSON.
+6. NO incluyas hashtags (#) en ningún tweet.
+7. El último tweet DEBE incluir SIEMPRE el enlace: https://argpulse.com
+8. Responde ÚNICAMENTE con los datos JSON.
 """
 
 JSON_FORMAT_PREVIEW = """
