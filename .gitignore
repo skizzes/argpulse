@@ -1,0 +1,19 @@
+# --- Secretos y Configuración ---
+.env
+
+# --- Archivos de ejecución y logs ---
+logs/
+data/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Entornos virtuales ---
+venv/
+env/
+.venv/
+
+# --- Otros ---
+.vscode/
+.idea/
+*.log
