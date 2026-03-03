@@ -15,8 +15,8 @@ echo.
 set "BOT_DIR=%~dp0"
 set "PYTHON_PATH=%LOCALAPPDATA%\Programs\Python\Python312\python.exe"
 set "TASK_NAME=ArgPulseTwitterBot"
-:: 15:00 hora argentina (UTC-3) = 18:00 UTC
-set "TASK_TIME=15:00"
+:: 11:00 hora argentina (UTC-3) = 14:00 UTC
+set "TASK_TIME=11:00"
 
 echo Directorio del bot: %BOT_DIR%
 echo Hora de ejecución: %TASK_TIME% (hora argentina)
